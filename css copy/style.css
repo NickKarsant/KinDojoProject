@@ -144,14 +144,16 @@ color: white;
 width: 100%;
 }
 
-button.button{
-	padding: .5em 1.8em;
+button.patreon{
+	padding: 0.8em 1em;
 	border-radius: 9%;
-	background: rgb(4, 215, 159);
+	background: rgb(4, 215, 159) !important;
 	font-family: 'Lato', 'light', 'sans-serif';
 	color: black;
-	margin: 5% 5%;
+	font-size: 1em;
+	margin: 0;
 }
+
 
 
 .button:hover, .donate2 a:hover, .socialmedia a:hover {
@@ -161,7 +163,7 @@ opacity: .4;
 
 .donate button{
 	font-size: 1.5em;
-	opactity: 0.4;
+	opacity: 0.4;
 	margin: 7% 0 0 0;
 }
 
@@ -295,7 +297,7 @@ color: white;
 text-align: left;
 padding-top: 1em;
 line-height: 1.4em; 
-letter-spaceing: .1em;
+letter-spacing: .1em;
 word-spacing: .1em;
 font-size: 0.7em;
 }
@@ -697,7 +699,7 @@ input#bookclass:hover{
 }
 
 input#bookclass{
-	padding: 10% 20%
+	padding: 10% 20%;
 	border-radius: 9%;
 	background: rgb(4, 215, 159);
 	font-family: 'Lato', 'light', 'sans-serif';
@@ -897,7 +899,7 @@ html, body {
 
 	.donate2 p{
 		line-height: 1.5em; 
-		letter-spaceing: 0;
+		letter-spacing: 0;
 		word-spacing: .1em;
 		font-size: 0.7em;
 	}
@@ -1507,7 +1509,7 @@ font-size: 0.7em
 
 	.donate2 p{
 		line-height: 1.5em; 
-		letter-spaceing: 0;
+		letter-spacing: 0;
 		word-spacing: .1em;
 		font-size: 0.7em;
 	}
@@ -1783,7 +1785,7 @@ font-size: 0.7em
 
 	.donate2 p{
 		line-height: 1.5em; 
-		letter-spaceing: 0;
+		letter-spacing: 0;
 		word-spacing: .1em;
 		font-size: 0.7em;
 		width: 100%;
@@ -1936,7 +1938,7 @@ font-size: 0.7em
 	}
 	
 	input#bookclass{
-		padding: 10% 20%
+		padding: 10% 20%;
 		border-radius: 9%;
 		background: rgb(4, 215, 159);
 		font-family: 'Lato', 'light', 'sans-serif';
@@ -2110,7 +2112,7 @@ font-size: 0.7em
 	}
 	
 	input#bookclass{
-		padding: 10% 20%
+		padding: 10% 20%;
 		border-radius: 9%;
 		background: rgb(4, 215, 159);
 		font-family: 'Lato', 'light', 'sans-serif';
@@ -2266,7 +2268,7 @@ font-size: 0.7em
 
 	.donate2 p{
 		line-height: 1.5em; 
-		letter-spaceing: 0;
+		letter-spacing: 0;
 		word-spacing: .1em;
 		font-size: 0.7em;
 		width: 100%;
@@ -2422,7 +2424,7 @@ font-size: 0.7em
 	}
 	
 	input#bookclass{
-		padding: 10% 20%
+		padding: 10% 20%;
 		border-radius: 9%;
 		background: rgb(4, 215, 159);
 		font-family: 'Lato', 'light', 'sans-serif';
