@@ -136,12 +136,16 @@ width: 100%;
 .cover{
 padding: 25% 0 5% 0;
 margin-top: 10%;
-background-image: url("https://www.flamingfun.com/wp-content/uploads/2015/03/exitonearmvolt.jpeg");
+/* background-image: url("https://www.flamingfun.com/wp-content/uploads/2015/03/exitonearmvolt.jpeg"); */
+background-image: url("../images/Titanic.jpg");
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;
 color: white;
-width: 100%;
+width: 80%;
+margin-left: 10%;
+display: flex;
+justify-content: center;
 }
 
 button.button{
