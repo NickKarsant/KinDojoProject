@@ -4,9 +4,11 @@
 
 <img src="images/example2.jpg" alt="screenshot of classes offered, partial list" width="150" height="300"/>
 
-<img src="images/example3.jpg" alt="screenshot of classes offered, partial list" width="150" height="300"/>
+<img src="images/example3.jpg" alt="about page,lots of text, a black and white picture of a man riding a cyr wheel facing the camera with large windows close in the background" width="150" height="300"/>
 
-<img src="images/example4.jpg" alt="screenshot of classes offered, partial list" width="150" height="300"/>
+<img src="images/example5.jpg" alt="booking form page" width="150" height="300"/>
+
+<img src="images/example4.jpg" alt="contact page/form" width="150" height="300"/>
 </div>
  
 
