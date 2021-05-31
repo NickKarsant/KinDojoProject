@@ -3,6 +3,10 @@
 <img src="images/example.jpg" alt="home page, a picture of a man on a seer wheel and another picture of a timelapse of fire dancing" width="150" height="300"/>
 
 <img src="images/example2.jpg" alt="screenshot of classes offered, partial list" width="150" height="300"/>
+
+<img src="images/example3.jpg" alt="screenshot of classes offered, partial list" width="150" height="300"/>
+
+<img src="images/example4.jpg" alt="screenshot of classes offered, partial list" width="150" height="300"/>
 </div>
  
 
