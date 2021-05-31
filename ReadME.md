@@ -1,10 +1,8 @@
 # KinDojo
 
-![screenshot of home page](images/example.jpg)
-<img src="images/example.jpg" alt="drawing" width="100" height="300"/>
+<img src="images/example.jpg" alt="home page, a picture of a man on a seer wheel and another picture of a timelapse of fire dancing" width="150" height="300"/>
 
-![screenshot of classes offered, partial list](./images/example2.jpg =100x200)
-<img src="images/exmaple2.jpg" alt="screenshot of classes offered, partial list" width="100" height="200"/>
+<img src="images/example2.jpg" alt="screenshot of classes offered, partial list" width="150" height="300"/>
 
 
 A simple static multi-page website for a small business offering acrobatic and prop manipulation classes.  
