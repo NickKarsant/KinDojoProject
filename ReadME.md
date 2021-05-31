@@ -1,7 +1,7 @@
 # KinDojo
 
-![screenshot of home page]('./images/example.jpg')
-![screenshot of classes offered, partial list]('./images/example.jpg')
+![screenshot of home page](images/example.jpg)
+![screenshot of classes offered, partial list](./images/example.jpg)
 
 A simple static multi-page website for a small business offering acrobatic and prop manipulation classes.  
 
