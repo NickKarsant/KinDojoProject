@@ -3,70 +3,70 @@
 
 
 
-	<head> 
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>FlowArts D&omacr;j&omacr;: Contact</title>		
+<head>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>KinD&omacr;j&omacr;: Contact</title>
 
-		
-		<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-		<script src="js/jquery-3.4.1.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-		<script src="js/main.js"></script>
-	</head>
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
 
-  gtag('config', 'GA_MEASUREMENT_ID');
+	gtag('config', 'GA_MEASUREMENT_ID');
 </script>
-	<br><br>
+<br><br>
+
 <body>
 
 	<header>
+		<div>
+			<img src="logos/logowithflame.jpg" alt="kindojo logo">
+		</div>
+		<nav>
+			<li> <a href="index.html">D&omacr;j&omacr;</a></li>
+			<li> <a href="classes.html">Classes</a></li>
+			<li> <a href="aboutus.html">About</a></li>
+			<li> <a class="current" href="contact.html">Contact</a></li>
+		</nav>
+
+	</header>
+
+
+	<section class="form">
+		<form class="email-form" action="https://formspree.io/f/xzbyryey" method="POST"> <br><br>
 			<div>
-				<img src="logos/logowithflame.jpg" alt="kindojo logo">
+				<p class="label">Name</p>
+				<input type="text" id="inputName" name="name">
 			</div>
-			<nav>
-				<li> <a href = "index.html">D&omacr;j&omacr;</a></li>
-				<li> <a href="classes.html">Classes</a></li>
-				<li> <a href = "aboutus.html">About</a></li>
-				<li> <a class= "current" href = "contact.html">Contact</a></li>
-			</nav>
+			<br>
+			<div>
+				<p class="label">Email</p>
+				<input type="email" id="inputEmail" name="_replyto">
+			</div>
+			<br>
+			<input type="hidden" name="_gotcha" style="display: none">
+			<input type="hidden" name="_next" value="flowartsdojo.com/contact.html">
 
-		</header>
-
-
-<section class="form">
-	<form class="email-form" action="https://formspree.io/f/nkarsant@gmail.com" method="POST">
-		<br><br>
-		<div >
-			<p class="label">Name</p>
-			<input type="text" id="inputName" name="name">
-		</div>
-		<br>
-		<div >
-			<p class="label">Email</p>
-			<input type="email" id="inputEmail" name="_replyto" >
-		</div>
-		<br>
-		<input type="hidden" name="_gotcha" style="display: none">
-		<input type="hidden" name="_next" value="flowartsdojo.com/contact.html">
-
-		<div >
-			<p class="label">Message</p>
-			<textarea id="inputMessage"  name="message" cols="20" rows="10" 
-				placeholder="If you have any further questions about props, or which class might be right for you, please don't hesitate to ask."></textarea>
-		</div>
-<br>
+			<div>
+				<p class="label">Message</p>
+				<textarea id="inputMessage" name="message" cols="20" rows="10"
+					placeholder="If you have any further questions about props, or which class might be right for you, please don't hesitate to ask."></textarea>
+			</div>
+			<br>
 
 
-<!-- recaptcha -->
-<!-- <form action="https://formspree.io/nkarsant@gmail.com" method="POST" id="passthrough">
+			<!-- recaptcha -->
+			<!-- <form action="https://formspree.io/nkarsant@gmail.com" method="POST" id="passthrough">
 	<div id="recaptcha" style="text-align:center; display:inline-block">
 		<div style="width: 304px; height: 78px;">
 			<div>
@@ -81,12 +81,12 @@
 
 
 
-		<span id="required">All fields required</span>
-		<span id="complete">Email Sent</span>
-		<br>
-		<input id="contactemail" type="submit" value="Send">
-	</form>
-</section>
+			<span id="required">All fields required</span>
+			<span id="complete">Email Sent</span>
+			<br>
+			<input id="contactemail" type="submit" value="Send">
+		</form>
+	</section>
 
 	<footer>
 
@@ -95,38 +95,44 @@
 			<li>Phone: 415-713-1130</li>
 			<li>Email: <a href="mailto:kindojo@gmail.com?subject=Booking">kindojo@gmail.com</a></li>
 		</div>
-	
+
 
 
 		<div class="socialmedia">
 			<h4>Follow</h4>
 
 			<link>
-				<a href="https://www.instagram.com/kindojo_flowarts/?hl=en" target="_blank"> <img src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="instagram logo"></a>
+			<a href="https://www.instagram.com/kindojo_flowarts/?hl=en" target="_blank"> <img
+					src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png"
+					alt="instagram logo"></a>
 
-				<a href="https://www.facebook.com/kindojoflow" target="_blank"> <img src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_facebook_3225194.png" alt="facebook logo"> </a>
+			<a href="https://www.facebook.com/kindojoflow" target="_blank"> <img
+					src="images/Social Media Icons/iconfinder_2018_social_media_popular_app_logo_facebook_3225194.png"
+					alt="facebook logo"> </a>
 
 			</link>
 		</div>
-	
+
 
 
 		<div class="donate2">
 			<h4>Donate to the Flow Arts</h4>
-			<p>Help support a student's learning by donating to KinD&omacr;j&omacr;. 
-				Your donation will be used to purchase practice props of varying sizes to allow people of all ages to participate.</p>
+			<p>Help support a student's learning by donating to KinD&omacr;j&omacr;.
+				Your donation will be used to purchase practice props of varying sizes to allow people of all ages to
+				participate.</p>
 			<br>
-			<a href="https://www.patreon.com/bePatron?u=19117719" target="_blank">Become a Patron</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+			<a href="https://www.patreon.com/bePatron?u=19117719" target="_blank">Become a Patron</a>
+			<script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 			<!-- <a href="https://www.patreon.com/flowartsdojo">DONATE</a> -->
 		</div>
-	
 
-	
-		 
+
+
+
 	</footer>
-	
-  <!-- <script>
+
+	<!-- <script>
   grecaptcha.ready(function() {
       grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
          ...
@@ -135,12 +141,13 @@
   </script> -->
 
 	<script>
-	$('.email-form').on('submit', function(event) {
-		// uncomment line 142 when ready to add repatcha
-		// and avoid redirection to formspree page
-		// event.preventDefault();
-		emailValidation();	
-	});
+		$('.email-form').on('submit', function (event) {
+			// uncomment line 142 when ready to add repatcha
+			// and avoid redirection to formspree page
+			// event.preventDefault();
+			emailValidation();
+		});
 	</script>
 </body>
+
 </html>
