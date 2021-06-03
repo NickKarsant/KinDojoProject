@@ -44,6 +44,10 @@ max-width: 100%;
 width: 100%;
 }
 
+body header div a#logoLink.logoLink {
+	background-color: blue;
+}
+
 
 nav {
 text-align: center; 
@@ -228,6 +232,7 @@ width: 50%;
 float: left;
 padding-left: 10%;
 }
+
 
 /* use percentages for div objects in sections, use vw for sections */
 .donate {
@@ -509,10 +514,6 @@ color: rgb(4, 215, 159);
 
 .line{ 
 display: block;
-margin-before: 0.5em;
-margin-after: 0.5em;
-margin-start: auto;
-margin-end: auto;
 overflow: hidden;
 border-style: inset;
 border-width: 1px;
@@ -702,7 +703,7 @@ input#bookclass:hover{
 }
 
 input#bookclass{
-	padding: 10% 20%
+	padding: 5% 10%;
 	border-radius: 9%;
 	background: rgb(4, 215, 159);
 	font-family: 'Lato', 'light', 'sans-serif';
