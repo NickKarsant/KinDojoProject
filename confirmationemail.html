@@ -95,7 +95,7 @@ img{
 			</td>
 			</tr>
 			<tr>
-			<td id="b">
+			<td id="Name">
 				for {name}
 			</td>
 			</tr>
@@ -104,34 +104,36 @@ img{
 		<div></div>
 
 		<table id="data"> 
-			<tr id="details">
+			<tr class="details">
 				<td>What: </td>
-				<td>{class}</td>
+				<td id="Class">{class}</td>
 			</tr>
-			<tr id="details">
+			<tr class="details">
 				<td>When:</td>
-				<td>{date}</td>
-				<td>{startime} - {endtime}</td>
+				<td id="Date">{date}</td>
+				<td id="StartTime">{startime}</td>
+				<td>to  </td>
+				<td id="EndTime">{endtime}</td>
 			</tr>
-			<tr id="details">
+			<tr class="details">
 				<td>Where: </td>
-				<td>{location}</td>
+				<td id="Location">{location}</td>
 			</tr>
-			<tr id="details">
+			<tr class="details">
 				<td>Students: </td>
-				<td>(students)</td>
+				<td id="Students">(students)</td>
 			</tr>
 		</table>
 
 		<table id="pay">
 			<tr>
-				<td id="total">Total: ${total}</td>
+				<td id="Total">Total: ${total}</td>
 			</tr>
 			<tr>
 				<td id="p">To complete this booking, please follow the Paypal link to payment.</td> 
 			</tr>
 			<tr>
-				<td> <a href="https://www.paypal.me/flowartsdojo"><img src="https://deschutespioneers.org/wp-content/uploads/2017/06/dpa-paypal-button.png"></a> </td>
+				<td> <a target="_blank" href="https://www.paypal.me/flowartsdojo"><img src="https://deschutespioneers.org/wp-content/uploads/2017/06/dpa-paypal-button.png"></a> </td>
 			</tr>
 			
 
