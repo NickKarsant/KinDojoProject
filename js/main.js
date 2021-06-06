@@ -318,9 +318,8 @@ function doValidation() {
 }
 
 function submitForm(name, email, message){
-	var destinationEmail = "nkarsant@gmail.com";
 	var form = document.createElement('form');
-	form.setAttribute("action", "https://formspree.io/" + destinationEmail)
+	form.setAttribute("action", "https://formspree.io/f/moqydrll")
 	form.setAttribute("method", "POST")
 	form.setAttribute("style", "display: none;")
 
