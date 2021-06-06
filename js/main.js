@@ -317,7 +317,7 @@ function doValidation() {
   }
 }
 
-function submitForm(name, email, message){
+function sendEmail(name, email, message){
 	var form = document.createElement('form');
 	form.setAttribute("action", "https://formspree.io/f/moqydrll")
 	form.setAttribute("method", "POST")
@@ -377,7 +377,7 @@ function confirmSavedToDatabase(dataObject) {
   var dataSentence = lesson + " class for " + students + " student(s) at " + location + " on " + date + " starting at " + starttime + " and ending at " + endtime + ".  The total is " + total + "."
   // var dataSentenceAll = name + ' (' + email + ') schdeuled a ' + lesson + " class for " + students + " student(s) at " + location + " on " + date + " starting at " + starttime + " and ending at " + endtime + ".  The total is " + total + "."
 	
-	submitForm(name, email, dataSentence)
+	sendEmail(name, email, dataSentence)
 
 }
 
