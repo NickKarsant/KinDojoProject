@@ -309,11 +309,51 @@ function doValidation() {
     document.getElementById("required").style.display = "none";
     document.getElementById("apptime").style.display = "block";
     document.getElementById("apptime").style.display = "none";
-    confirmSavedToDatabase(data);
+		return confirmSavedToDatabase(data);
+		
   } else {
     document.getElementById("required").style.display = "block";
     console.log("validation error");
   }
+}
+
+function submitForm(name, email, message){
+	var destinationEmail = "nkarsant@gmail.com";
+	var form = document.createElement('form');
+	form.setAttribute("action", "https://formspree.io/" + destinationEmail)
+	form.setAttribute("method", "POST")
+	form.setAttribute("style", "display: none;")
+
+	// Subject for your email
+	var field = document.createElement("input");
+	field.setAttribute("type", "hidden");
+	field.setAttribute("name", "_subject");
+	field.setAttribute("value", "Contact form submitted");
+	form.appendChild(field);
+
+	// Contact email address        
+	field = document.createElement("input");
+	field.setAttribute("type", "hidden");
+	field.setAttribute("name", "email");
+	field.setAttribute("value", email);
+	form.appendChild(field);
+
+	// Your user's name
+	field = document.createElement("input");              
+	field.setAttribute("type", "hidden");
+	field.setAttribute("name", "name");
+	field.setAttribute("value", name);
+	form.appendChild(field);
+
+	// The text message
+	field = document.createElement("input");              
+	field.setAttribute("type", "hidden");
+	field.setAttribute("name", "message");
+	field.setAttribute("value", message);
+	form.appendChild(field);
+
+	document.body.appendChild(form);    
+	form.submit();
 }
 
 
@@ -336,48 +376,25 @@ function confirmSavedToDatabase(dataObject) {
   var location = dataObject.location;
   var total = dataObject.total;
   var dataSentence = lesson + " class for " + students + " student(s) at " + location + " on " + date + " starting at " + starttime + " and ending at " + endtime + ".  The total is " + total + "."
-  var dataSentenceAll = name + '(' + email + ') wants schdeule a ' + lesson + " class for " + students + " student(s) at " + location + " on " + date + " starting at " + starttime + " and ending at " + endtime + ".  The total is " + total + "."
+  // var dataSentenceAll = name + ' (' + email + ') schdeuled a ' + lesson + " class for " + students + " student(s) at " + location + " on " + date + " starting at " + starttime + " and ending at " + endtime + ".  The total is " + total + "."
+	
+	submitForm(name, email, dataSentence)
 
-
-	sendEmail(name, email, dataSentence);
-
-  // if (reservationsReference.push(dataObject)) {
-  // 	setTimeout(function() {
-  // 		console.log("saved to database");
-  // 		location.reload();
-  // 		sendEmail();
-  //
-  //   }, 7000);
-  // }
 }
 
-async function sendEmail(name, email, sentence) {
-	console.log(sentence)
-	console.log(name)
-	console.log(email)
-  // axios({
-  // 	url: 'https://formspree.io/f/moqydrll',
-  // 	method: 'post',
-  // 	headers: {
-  // 		'Accept': 'application/json'
-  // 	},
-  // 	data: {
-  // 		name: name,
-  // 		email: email,
-  // 		message: dataSentence
-  // 	}
-  // }).then((res) => {console.log(res); })
+// async function sendEmail(name, email, sentence) {
 
-
-  $.ajax({
-    url: "https://formspree.io/f/moqydrll",
-    method: "POST",
-    data: {
-      name: name,
-      email: email,
-      message: sentence
-    }
-  }).then(res => {
-    console.log(res);
-  });
-}
+//   $.ajax({
+//     url: "https://formspree.io/f/moqydrll",
+// 		method: "POST",
+// 		headers: {
+// 			'Access-Control-Allow-Origin': 'https://formspree.com',
+// 			'Access-Control-Allow-Credentials': true
+// 					},
+//     data: {
+//       name: name,
+//       email: email,
+//       message: sentence
+//     }
+//   })
+// }
