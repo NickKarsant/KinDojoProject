@@ -279,8 +279,7 @@ function priceTimesStudents() {
   return total;
 }
 
-// when submitted, the name data should be set
-// and all data should be sent to your database
+
 function doValidation() {
   console.log("form submitted");
 
@@ -309,13 +308,15 @@ function doValidation() {
     document.getElementById("required").style.display = "none";
     document.getElementById("apptime").style.display = "block";
     document.getElementById("apptime").style.display = "none";
-		return confirmSavedToDatabase(data);
+		confirmSavedToDatabase(data);
 		
   } else {
     document.getElementById("required").style.display = "block";
     console.log("validation error");
   }
 }
+
+
 
 function sendEmail(name, email, message){
 	var form = document.createElement('form');
@@ -358,8 +359,7 @@ function sendEmail(name, email, message){
 
 function confirmSavedToDatabase(dataObject) {
 	var reservationsReference = database.ref("reservations");
-	// document.getElementById("complete").style.display = "block";
-	console.log(dataObject);
+	document.getElementById("complete").style.display = "block";
 
   if (reservationsReference.push(dataObject)) {
     console.log("saved to database");
@@ -367,33 +367,9 @@ function confirmSavedToDatabase(dataObject) {
 
 	var name = dataObject.name;
   var email = dataObject.email;
-  var date = dataObject.date;
-  var starttime = dataObject.starttime;
-  var endtime = dataObject.endtime;
-  var students = dataObject.students;
-  var lesson = dataObject.lesson;
-  var location = dataObject.location;
-  var total = dataObject.total;
-  var dataSentence = lesson + " class for " + students + " student(s) at " + location + " on " + date + " starting at " + starttime + " and ending at " + endtime + ".  The total is " + total + "."
+  var dataSentence = dataObject.lesson + " class for " + dataObject.students + " student(s) at " + dataObject.location + " on " + dataObject.date + " starting at " + dataObject.starttime + " and ending at " + dataObject.endtime + ".  The total is " + dataObject.total + "."
   // var dataSentenceAll = name + ' (' + email + ') schdeuled a ' + lesson + " class for " + students + " student(s) at " + location + " on " + date + " starting at " + starttime + " and ending at " + endtime + ".  The total is " + total + "."
 	
 	sendEmail(name, email, dataSentence)
 
 }
-
-// async function sendEmail(name, email, sentence) {
-
-//   $.ajax({
-//     url: "https://formspree.io/f/moqydrll",
-// 		method: "POST",
-// 		headers: {
-// 			'Access-Control-Allow-Origin': 'https://formspree.com',
-// 			'Access-Control-Allow-Credentials': true
-// 					},
-//     data: {
-//       name: name,
-//       email: email,
-//       message: sentence
-//     }
-//   })
-// }
